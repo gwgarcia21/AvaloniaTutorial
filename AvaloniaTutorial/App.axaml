@@ -1,6 +1,7 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			 xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia" 
+			 xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+			 xmlns:controls="using:AvaloniaTutorial"
              x:Class="AvaloniaTutorial.App"
              RequestedThemeVariant="Light">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
@@ -8,5 +9,18 @@
     <Application.Styles>
         <FluentTheme />
 		<materialIcons:MaterialIconStyles/>
+		<StyleInclude Source="/LargeLabelControl.axaml"></StyleInclude>
     </Application.Styles>
+
+	<Application.Resources>
+		<SolidColorBrush x:Key="MidGreyBrush">#e5e5e5</SolidColorBrush>
+		<SolidColorBrush x:Key="LightBlueBrush">#606875</SolidColorBrush>
+		<SolidColorBrush x:Key="MidBlueBrush">#373c44</SolidColorBrush>
+		<SolidColorBrush x:Key="DarkBlueBrush">#1a1c20</SolidColorBrush>
+		<SolidColorBrush x:Key="FadedBlueBrush">#7f98c7</SolidColorBrush>
+		<SolidColorBrush x:Key="HighlightedFadedBlueBrush">#98acd0</SolidColorBrush>
+		<SolidColorBrush x:Key="FadedRedBrush">#bc7c7a</SolidColorBrush>
+		<SolidColorBrush x:Key="HighlightedFadedRedBrush">#bc7c7a</SolidColorBrush>
+		<SolidColorBrush x:Key="LightRedBrush">#b05c4e</SolidColorBrush>
+	</Application.Resources>
 </Application>
